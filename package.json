@@ -1,0 +1,14 @@
+{
+  "name": "code-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code-analysis-parser/index.js",
+  "scripts": {
+    "start": "node code-analysis-parser/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
