@@ -5,7 +5,7 @@ const get = require('lodash/get');
 const flatten = require('lodash/flatten');
 
 const isNodeObject = item => !isNil(get(item, 'kind'));
-const mapStatement = ({statement, fileContent}) => Object.values(statement).map(recursiveStatementsMapper(fileContent)).filter(it => !isNil(it));
+const mapStatement = ({statement, fileContent}) => Object.values(statement).map(recursiveStatementsMapper({fileContent})).filter(it => !isNil(it));
 const getOccupiedRange = ({pos, end, content, startLine}) => {
 	const occupiedContent = content.substring(pos, end);
 	const lines = occupiedContent.split('\n').length - 1;
@@ -36,9 +36,9 @@ const fileToSourceMapper = ({filePath, fileContent}) => {
 	const occupiedRange = getOccupiedRange({pos, end, content: fileContent, startLine: 0});
 
 	return ({
-		statements: source.statements.map(
+		statements: pos !== end ? source.statements.map(
 			recursiveStatementsMapper({fileContent, parentOccupiedRange: occupiedRange})
-		),
+		) : [],
 		filePath,
 		fileContent
 	});

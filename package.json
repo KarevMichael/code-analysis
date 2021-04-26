@@ -2,12 +2,12 @@
   "name": "code-analysis",
   "version": "1.0.0",
   "description": "",
-  "main": "code-analysis-parser/index.js",
+  "main": "parser/index.js",
   "scripts": {
-    "start": "node code-analysis-parser/index.js"
+    "start": "node parser/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "KarevMichael",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {}
