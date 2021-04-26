@@ -2,9 +2,9 @@
   "name": "code-analysis-parser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "createReport.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node createReport.js"
   },
   "keywords": [],
   "author": "",
