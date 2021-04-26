@@ -1,8 +1,8 @@
-const { fileToStatementsMapper } = require('./mappers/fileToStatementsMapper');
+const { fileToSourceMapper } = require('./mappers/fileToSourceMapper');
 const { extractTextFilesFromDirectory } = require('./extractors/extractTextFilesFromDirectory');
 
 const extracted = 
-    extractTextFilesFromDirectory('/home/michael/Coding/code-analysis/training-data').map(fileToStatementsMapper)[2];
+    extractTextFilesFromDirectory('/home/michael/Coding/code-analysis/training-data').map(fileToSourceMapper);
 
 
 
