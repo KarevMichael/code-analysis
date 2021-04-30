@@ -2,12 +2,92 @@
     {
         "statements": [],
         "filePath": "dir/js1.js",
-        "fileContent": ""
+        "fileContent": "",
+        "iteration": 1
     },
     {
-        "statements": [],
+        "statements": [
+            {
+                "pos": 0,
+                "end": 30,
+                "content": "type Test = {\n    it: number\n}",
+                "symbols": [
+                    "Identifier",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator"
+                ],
+                "complexity": 8,
+                "kind": "TypeAliasDeclaration",
+                "lines": [
+                    {
+                        "symbols": [
+                            "Identifier",
+                            "Identifier",
+                            "Punctuator",
+                            "Punctuator"
+                        ],
+                        "complexity": 4
+                    },
+                    {
+                        "symbols": [
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier"
+                        ],
+                        "complexity": 3
+                    },
+                    {
+                        "symbols": [
+                            "Punctuator"
+                        ],
+                        "complexity": 1
+                    }
+                ]
+            }
+        ],
+        "filePath": "dir/js3.ts",
+        "fileContent": "type Test = {\n    it: number\n}",
+        "iteration": 1
+    },
+    {
+        "statements": [
+            {
+                "pos": 0,
+                "end": 20,
+                "content": "console.log('heloo')",
+                "symbols": [
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "String",
+                    "Punctuator"
+                ],
+                "complexity": 6,
+                "kind": "ExpressionStatement",
+                "lines": [
+                    {
+                        "symbols": [
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier",
+                            "Punctuator",
+                            "String",
+                            "Punctuator"
+                        ],
+                        "complexity": 6
+                    }
+                ]
+            }
+        ],
         "filePath": "dir/ts1.ts",
-        "fileContent": ""
+        "fileContent": "console.log('heloo')",
+        "iteration": 1
     },
     {
         "statements": [
@@ -15,37 +95,25 @@
                 "pos": 0,
                 "end": 12,
                 "content": "const a = 1;",
+                "symbols": [
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator"
+                ],
+                "complexity": 5,
                 "kind": "FirstStatement",
-                "children": [
+                "lines": [
                     {
-                        "pos": 0,
-                        "end": 11,
-                        "content": "const a = 1",
-                        "kind": "VariableDeclarationList",
-                        "children": [
-                            {
-                                "pos": 5,
-                                "end": 11,
-                                "content": " a = 1",
-                                "kind": "VariableDeclaration",
-                                "children": [
-                                    {
-                                        "pos": 5,
-                                        "end": 7,
-                                        "content": " a",
-                                        "kind": "Identifier",
-                                        "children": []
-                                    },
-                                    {
-                                        "pos": 9,
-                                        "end": 11,
-                                        "content": " 1",
-                                        "kind": "FirstLiteralToken",
-                                        "children": []
-                                    }
-                                ]
-                            }
-                        ]
+                        "symbols": [
+                            "Keyword",
+                            "Identifier",
+                            "Punctuator",
+                            "Numeric",
+                            "Punctuator"
+                        ],
+                        "complexity": 5
                     }
                 ]
             },
@@ -53,192 +121,131 @@
                 "pos": 12,
                 "end": 117,
                 "content": "\n\nfunction c(b) {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}",
+                "symbols": [
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator"
+                ],
+                "complexity": 32,
                 "kind": "FunctionDeclaration",
-                "children": [
+                "lines": [
                     {
-                        "pos": 22,
-                        "end": 24,
-                        "content": " c",
-                        "kind": "Identifier",
-                        "children": []
+                        "symbols": [],
+                        "complexity": 0
                     },
                     {
-                        "pos": 25,
-                        "end": 26,
-                        "content": "b",
-                        "kind": "Parameter",
-                        "children": [
-                            {
-                                "pos": 25,
-                                "end": 26,
-                                "content": "b",
-                                "kind": "Identifier",
-                                "children": []
-                            }
-                        ]
+                        "symbols": [],
+                        "complexity": 0
                     },
                     {
-                        "pos": 27,
-                        "end": 117,
-                        "content": " {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}",
-                        "kind": "Block",
-                        "children": [
-                            {
-                                "pos": 29,
-                                "end": 52,
-                                "content": "\n    console.log(a, b);",
-                                "kind": "ExpressionStatement",
-                                "children": [
-                                    {
-                                        "pos": 29,
-                                        "end": 51,
-                                        "content": "\n    console.log(a, b)",
-                                        "kind": "CallExpression",
-                                        "children": [
-                                            {
-                                                "pos": 29,
-                                                "end": 45,
-                                                "content": "\n    console.log",
-                                                "kind": "PropertyAccessExpression",
-                                                "children": [
-                                                    {
-                                                        "pos": 29,
-                                                        "end": 41,
-                                                        "content": "\n    console",
-                                                        "kind": "Identifier",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "pos": 42,
-                                                        "end": 45,
-                                                        "content": "log",
-                                                        "kind": "Identifier",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "pos": 46,
-                                                "end": 47,
-                                                "content": "a",
-                                                "kind": "Identifier",
-                                                "children": []
-                                            },
-                                            {
-                                                "pos": 48,
-                                                "end": 50,
-                                                "content": " b",
-                                                "kind": "Identifier",
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "pos": 52,
-                                "end": 69,
-                                "content": "\n    const g = 1;",
-                                "kind": "FirstStatement",
-                                "children": [
-                                    {
-                                        "pos": 52,
-                                        "end": 68,
-                                        "content": "\n    const g = 1",
-                                        "kind": "VariableDeclarationList",
-                                        "children": [
-                                            {
-                                                "pos": 62,
-                                                "end": 68,
-                                                "content": " g = 1",
-                                                "kind": "VariableDeclaration",
-                                                "children": [
-                                                    {
-                                                        "pos": 62,
-                                                        "end": 64,
-                                                        "content": " g",
-                                                        "kind": "Identifier",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "pos": 66,
-                                                        "end": 68,
-                                                        "content": " 1",
-                                                        "kind": "FirstLiteralToken",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "pos": 69,
-                                "end": 86,
-                                "content": "\n    const h = 2;",
-                                "kind": "FirstStatement",
-                                "children": [
-                                    {
-                                        "pos": 69,
-                                        "end": 85,
-                                        "content": "\n    const h = 2",
-                                        "kind": "VariableDeclarationList",
-                                        "children": [
-                                            {
-                                                "pos": 79,
-                                                "end": 85,
-                                                "content": " h = 2",
-                                                "kind": "VariableDeclaration",
-                                                "children": [
-                                                    {
-                                                        "pos": 79,
-                                                        "end": 81,
-                                                        "content": " h",
-                                                        "kind": "Identifier",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "pos": 83,
-                                                        "end": 85,
-                                                        "content": " 2",
-                                                        "kind": "FirstLiteralToken",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "pos": 86,
-                                "end": 115,
-                                "content": "\n\n    function foo() {\n\n    }",
-                                "kind": "FunctionDeclaration",
-                                "children": [
-                                    {
-                                        "pos": 100,
-                                        "end": 104,
-                                        "content": " foo",
-                                        "kind": "Identifier",
-                                        "children": []
-                                    },
-                                    {
-                                        "pos": 106,
-                                        "end": 115,
-                                        "content": " {\n\n    }",
-                                        "kind": "Block",
-                                        "children": []
-                                    }
-                                ]
-                            }
-                        ]
+                        "symbols": [
+                            "Keyword",
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier",
+                            "Punctuator",
+                            "Punctuator"
+                        ],
+                        "complexity": 6
+                    },
+                    {
+                        "symbols": [
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier",
+                            "Punctuator",
+                            "Identifier",
+                            "Punctuator",
+                            "Punctuator"
+                        ],
+                        "complexity": 9
+                    },
+                    {
+                        "symbols": [
+                            "Keyword",
+                            "Identifier",
+                            "Punctuator",
+                            "Numeric",
+                            "Punctuator"
+                        ],
+                        "complexity": 5
+                    },
+                    {
+                        "symbols": [
+                            "Keyword",
+                            "Identifier",
+                            "Punctuator",
+                            "Numeric",
+                            "Punctuator"
+                        ],
+                        "complexity": 5
+                    },
+                    {
+                        "symbols": [],
+                        "complexity": 0
+                    },
+                    {
+                        "symbols": [
+                            "Keyword",
+                            "Identifier",
+                            "Punctuator",
+                            "Punctuator",
+                            "Punctuator"
+                        ],
+                        "complexity": 5
+                    },
+                    {
+                        "symbols": [],
+                        "complexity": 0
+                    },
+                    {
+                        "symbols": [
+                            "Punctuator"
+                        ],
+                        "complexity": 1
+                    },
+                    {
+                        "symbols": [
+                            "Punctuator"
+                        ],
+                        "complexity": 1
                     }
                 ]
             }
         ],
         "filePath": "js1.js",
-        "fileContent": "const a = 1;\n\nfunction c(b) {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}"
+        "fileContent": "const a = 1;\n\nfunction c(b) {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}",
+        "iteration": 1
     }
 ]

@@ -1,0 +1,259 @@
+[
+    {
+        "statements": [],
+        "filePath": "dir/js1.js",
+        "fileContent": "",
+        "iteration": 2
+    },
+    {
+        "statements": [
+            {
+                "pos": 0,
+                "end": 30,
+                "content": "type Test = {\n    it: number\n}",
+                "symbols": [
+                    "Identifier",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator"
+                ],
+                "complexity": 8,
+                "kind": "TypeAliasDeclaration",
+                "lines": [
+                    [
+                        {
+                            "complexity": 4,
+                            "symbols": [
+                                "Identifier",
+                                "Identifier",
+                                "Punctuator",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 3,
+                            "symbols": [
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier"
+                            ]
+                        },
+                        {
+                            "complexity": 1,
+                            "symbols": [
+                                "Punctuator"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "filePath": "dir/js3.ts",
+        "fileContent": "type Test = {\n    it: number\n}",
+        "iteration": 2
+    },
+    {
+        "statements": [
+            {
+                "pos": 0,
+                "end": 20,
+                "content": "console.log('heloo')",
+                "symbols": [
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "String",
+                    "Punctuator"
+                ],
+                "complexity": 6,
+                "kind": "ExpressionStatement",
+                "lines": [
+                    [
+                        {
+                            "complexity": 6,
+                            "symbols": [
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier",
+                                "Punctuator",
+                                "String",
+                                "Punctuator"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "filePath": "dir/ts1.ts",
+        "fileContent": "console.log('heloo')",
+        "iteration": 2
+    },
+    {
+        "statements": [
+            {
+                "pos": 0,
+                "end": 12,
+                "content": "const a = 1;",
+                "symbols": [
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator"
+                ],
+                "complexity": 5,
+                "kind": "FirstStatement",
+                "lines": [
+                    [
+                        {
+                            "complexity": 5,
+                            "symbols": [
+                                "Keyword",
+                                "Identifier",
+                                "Punctuator",
+                                "Numeric",
+                                "Punctuator"
+                            ]
+                        }
+                    ]
+                ]
+            },
+            {
+                "pos": 12,
+                "end": 117,
+                "content": "\n\nfunction c(b) {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}",
+                "symbols": [
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Numeric",
+                    "Punctuator",
+                    "Keyword",
+                    "Identifier",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator",
+                    "Punctuator"
+                ],
+                "complexity": 32,
+                "kind": "FunctionDeclaration",
+                "lines": [
+                    [
+                        {
+                            "complexity": 0,
+                            "symbols": []
+                        },
+                        {
+                            "complexity": 0,
+                            "symbols": []
+                        },
+                        {
+                            "complexity": 6,
+                            "symbols": [
+                                "Keyword",
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier",
+                                "Punctuator",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 9,
+                            "symbols": [
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier",
+                                "Punctuator",
+                                "Identifier",
+                                "Punctuator",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 5,
+                            "symbols": [
+                                "Keyword",
+                                "Identifier",
+                                "Punctuator",
+                                "Numeric",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 5,
+                            "symbols": [
+                                "Keyword",
+                                "Identifier",
+                                "Punctuator",
+                                "Numeric",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 0,
+                            "symbols": []
+                        },
+                        {
+                            "complexity": 5,
+                            "symbols": [
+                                "Keyword",
+                                "Identifier",
+                                "Punctuator",
+                                "Punctuator",
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 0,
+                            "symbols": []
+                        },
+                        {
+                            "complexity": 1,
+                            "symbols": [
+                                "Punctuator"
+                            ]
+                        },
+                        {
+                            "complexity": 1,
+                            "symbols": [
+                                "Punctuator"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        "filePath": "js1.js",
+        "fileContent": "const a = 1;\n\nfunction c(b) {\n    console.log(a, b);\n    const g = 1;\n    const h = 2;\n\n    function foo() {\n\n    }\n}",
+        "iteration": 2
+    }
+]

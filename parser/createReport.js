@@ -1,12 +1,8 @@
-const { fileToStatisticsMapper } = require('./mappers/fileToStatisticsMapper');
-const { extractTextFilesFromDirectory } = require('./extractors/extractTextFilesFromDirectory');
-const { resolve } = require('path');
 const fs = require('fs');
+const {extractStatistics} = require('./extractors/extractStatistics');
 
-const workingDir = resolve('../training-data');
+const { reportLocation } = require('./constants');
 
-const extracted = 
-    extractTextFilesFromDirectory(workingDir).map(fileToStatisticsMapper);
+const extracted = extractStatistics();
 
-
-fs.writeFileSync(`${workingDir}/report`, JSON.stringify(extracted, null, 4));
+fs.writeFileSync(reportLocation, JSON.stringify(extracted, null, 4));
