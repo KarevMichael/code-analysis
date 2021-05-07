@@ -1,0 +1,17 @@
+plugins:
+  - prettier
+  - filenames
+  - comment-annotations
+  - jest
+extends:
+  - airbnb-base
+  - prettier
+  - plugin:comment-annotations/recommended
+  - plugin:jest/recommended
+  - ./.eslintrc.common.yml
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+env:
+  node: true
+  jest: true

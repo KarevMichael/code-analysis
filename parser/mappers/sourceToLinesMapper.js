@@ -1,7 +1,5 @@
-const sourceToLinesMapper = () => {
-    
-};
+const sourceToLinesMapper = () => {};
 
 module.exports = {
-	statementsToLinesMapper: sourceToLinesMapper
+  statementsToLinesMapper: sourceToLinesMapper,
 };

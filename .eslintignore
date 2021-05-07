@@ -1,0 +1,15 @@
+**/coverage/
+**/node_modules/
+**/flow-typed/
+**/coverage/
+**/node_env/
+**/public/
+**/build/
+**/storybook-build/
+**/logs/
+**/data/
+**/file-vaults/
+**/.next/
+**/.cache/
+**/.dist/
+packages/emails/emails/*.template.js

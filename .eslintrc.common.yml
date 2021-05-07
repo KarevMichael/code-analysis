@@ -1,0 +1,32 @@
+rules:
+  curly: [error, all]
+  padding-line-between-statements:
+    - error
+    - blankLine: always
+      prev: '*'
+      next: [multiline-block-like, return]
+    - blankLine: always
+      prev: [multiline-block-like, var, let, const]
+      next: '*'
+    - blankLine: any
+      prev: [var, let, const]
+      next: [var, let, const]
+  quotes: [error, single, { avoidEscape: true }]
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies: true
+  prettier/prettier: error
+  class-methods-use-this: off
+  no-underscore-dangle: off
+  no-plusplus: off
+  no-await-in-loop: off
+  no-restricted-syntax:
+    - error
+    - WithStatement
+    - ForInStatement
+    - LabeledStatement
+  no-return-await: off
+  lines-between-class-members: off
+  no-empty-function: off
+  prefer-object-spread: off
+  max-classes-per-file: off
