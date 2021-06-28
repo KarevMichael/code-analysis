@@ -1,13 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import Loading from "./Loading";
-import {App} from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Loading from './ui/Loading';
+import { App } from './ui/App';
 
+window.devicePixelRatio = 1;
 
 ReactDOM.render(
   <React.Suspense fallback={<Loading />}>
-    <App/>
+    <App />
   </React.Suspense>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

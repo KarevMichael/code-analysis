@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/tabs": "^0.15.0",
     "fetch-suspense": "^1.2.2",
     "jest": "^26.6.0",
     "lodash": "^4.17.21",
@@ -11,6 +12,7 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.0",
+    "react-virtualized": "^9.22.3",
     "react-vis": "^1.11.7",
     "styled-components": "^5.2.3",
     "web-vitals": "^0.2.4",
